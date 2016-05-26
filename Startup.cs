@@ -17,7 +17,7 @@ namespace ConsoleApplication
             var host = new WebHostBuilder()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseKestrel()
-                .UseStartup<Program>()
+                .UseStartup<Startup>()
                 .Build();
                 
             host.Run();
